@@ -1,4 +1,23 @@
-#blob {
-  position: absolute;
-  right: ;
+.blob {
+  width: 120px;
+  height: 120px;
+  background: #ff4500;
+  border-radius: 50%;
+  animation: blobMorph 4s infinite ease-in-out;
+}
+
+/* Morphing animation */
+@keyframes blobMorph {
+  0%, 100% {
+    border-radius: 50% 50% 50% 50%;
+  }
+  25% {
+    border-radius: 60% 40% 50% 50%;
+  }
+  50% {
+    border-radius: 40% 60% 50% 50%;
+  }
+  75% {
+    border-radius: 50% 50% 40% 60%;
+  }
 }
